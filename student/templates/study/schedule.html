@@ -1,0 +1,38 @@
+{% extends 'study/master.html' %}
+{% load static %}
+{% block title %}Schedule{% endblock %}
+{% block link %}
+
+{% endblock %}   
+</head>
+<body>
+   {% block content %}
+    
+  
+   <h1 align="center" style="color: blueviolet; padding-top:50px";></h1>
+   <div style="padding-top:50px ;">
+   <table class="table">
+    <thead>
+      <tr>
+       
+        <th scope="col">Day</th>
+        <th scope="col">Time start</th>
+        <th scope="col">Time Ends</th>
+        
+      </tr>
+      {% for s in schedule_list %}
+      <tr>
+        
+        <td>{{s.day}}</td>
+        <td>{{s.start}}</td>
+        <td>{{s.end}}</td>
+      </tr>
+      {% endfor %}
+    </thead>
+  </table>
+   </div>
+   
+   {% endblock %}
+</body>
+</html>
+  

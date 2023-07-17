@@ -1,0 +1,51 @@
+{% extends 'teach/master.html' %}
+{% load static %}
+{% block title %} addstudents to batch{% endblock %}
+{% block link %}
+
+{% endblock %}   
+</head>
+<body>
+   {% block content %}
+    
+     
+   
+   
+  <table class="table">
+        
+   <tr>
+     <th scope="col">ID</th>
+     <th scope="col">Batch Name</th>
+     <th scope="col">Course</th>
+     <th scope="col">Duration</th>
+    
+   
+     <th scope="col"></th>
+   </tr>
+   
+
+
+
+{% for b in batch_list %}
+ 
+   
+   <tr>
+     <tr>
+       <td scope="col">{{b.id}}</td>
+       <td scope="col">{{b.name}}</td>
+       <td scope="col">{{b.course}}</td>
+       <td scope="col">{{b.duration}}</td>
+     
+       
+       
+     </tr>
+   </tr>
+{% endfor %}
+   
+</table>
+
+    
+   {% endblock %}
+</body>
+</html>
+  

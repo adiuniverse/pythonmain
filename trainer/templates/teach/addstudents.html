@@ -1,0 +1,108 @@
+{% extends 'teach/master.html' %}
+{% load static %}
+{% block title %} addstudents{% endblock %}
+{% block link %}
+
+{% endblock %}   
+</head>
+<body>
+   {% block content %}
+
+     <!-- form start -->
+
+     <section class="h-100 h-custom" style="background-color: crimson;">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-lg-8 col-xl-6">
+            <div class="card rounded-3">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img3.webp"
+              
+                class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+                alt="Sample photo">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">ADD STUDENTS</h3>
+    
+                <form class="px-md-2" method="POST">
+                  {% csrf_token %}
+                  <div class="form-outline mb-4">
+                      <label class="form-label" for="form3Example1q">Full Name</label>
+                      <input type="text" id="form3Example1q" class="form-control" name="fname" />
+                  
+                  </div>
+                  <div class="form-outline mb-4">
+                     <label class="form-label" for="form3Example1q">Age</label>
+                     <input type="number" id="form3Example1q" class="form-control" name="age" />
+                 
+                  </div>
+                  <div class="mb-3">
+                      <label for="Address" class="form-label"> Address</label>
+                      <input type="Address" class="form-control" id="addressInputAdress1" aria-describedby="addressHelp" name="address">
+                  </div>
+                  <div class="form-outline mb-4">
+                      
+                        <label class="form-label" for="form3Example1q">Phone Number</label>
+                        <input type="number" id="exampleInputEmail1" class="form-control" name="phonenumber"/>
+                  
+                  </div>
+                  <div class="mb-3">
+                       <label for="Gender" class="form-label">Gender</label>
+                       <input type="radio" name="gender" value="male">Male
+                       <input type="radio"  name="gender" value="female">Female<br /><br />
+                  </div>
+                  <div class="form-outline mb-4">
+                      <label class="form-label" for="form3Example1q">Education</label>
+                      <input type="text" id="form3Example1q" class="form-control" name="education" />
+           
+                  </div>
+                  <div class="form-outline mb-4">
+                     <label class="form-label" for="form3Example1q">Course</label>
+                     <input type="text" id="form3Example1q" class="form-control" name="course" />
+          
+                 </div>
+                 <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1q">Course Id</label>
+                  <input type="text" id="form3Example1q" class="form-control" name="courseid" />
+       
+                </div>
+                 <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1q">Duration</label>
+                  <input type="text" id="form3Example1q" class="form-control" name="duration" />
+       
+              </div>
+                  <div class="form-outline mb-4">
+                      
+                      <label class="form-label" for="form3Example1q">Email Adress</label>
+                      <input type="email" id="exampleInputEmail1" class="form-control" name="email" />
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="form-outline mb-4">
+                      
+                    <label class="form-label" for="form3Example1q">Username</label>
+                    <input type="username" id="exampleInputEmail1" class="form-control" name="username"/>
+                    
+                </div>   
+                  
+                  
+                  <div class="form-outline mb-4">
+                      
+                      <label class="form-label" for="form3Example1q">Password</label>
+                      <input type="password" id="exampleInputEmail1" class="form-control" name="password"/>
+                      
+                  </div>
+                  <button type="submit" class="btn btn-success btn-lg mb-1">Add</button>
+    
+              </form>
+  
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!-- form end -->
+
+    
+   {% endblock %}
+</body>
+</html>
+  

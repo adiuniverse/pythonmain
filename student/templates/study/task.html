@@ -1,0 +1,47 @@
+{% extends 'study/master.html' %}
+{% load static %}
+{% block title %}Task{% endblock %}
+{% block link %}
+
+{% endblock %}   
+</head>
+<body>
+   {% block content %}
+  
+
+     
+     
+   <table class="table">
+        
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Task</th>
+      <th scope="col">Task Description</th>
+      <th scope="col">Date</th>
+    
+      <th scope="col"></th>
+    </tr>
+    
+
+
+
+    {% for t in task_list %}
+   
+ 
+    <tr>
+      <tr>
+        <td scope="col">{{t.id}}</td>
+        <td scope="col">{{t.task}}</td>
+        <td scope="col">{{t.description}}</td>
+        <td scope="col">{{t.date}}</td>
+        <td scope="col"></td>
+        <td scope="col"></td>
+        <td scope="col"></td>
+        
+      </tr>
+    </tr>
+   {% endfor %}
+   {% endblock %}
+</body>
+</html>
+  

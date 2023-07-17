@@ -1,0 +1,60 @@
+{% extends 'study/master.html' %}
+{% load static %}
+{% block title %}Reviews{% endblock %}
+{% block link %}
+
+{% endblock %}   
+</head>
+<body>
+   {% block content %}
+    
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container">
+          <div class="text-center">
+              <h6 class="section-title bg-white text-center text-primary px-3">Reviews</h6>
+              <h1 class="mb-5">Our Students Say!</h1>
+          </div>
+          <div class="owl-carousel testimonial-carousel position-relative">
+              <div class="testimonial-item text-center">
+                  <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimonial-1.jpg' %}" style="width: 80px; height: 80px;">
+                  <h5 class="mb-0">Nidha</h5>
+                  <p>Python Developer</p>
+                  <div class="testimonial-text bg-light text-center p-4">
+                  <p class="mb-0">I had a great experience with Edutech crew.The mentors were really helpfull and I got placed after completing my course.</p>
+                  </div>
+              </div>
+              <div class="testimonial-item text-center">
+                  <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimonial-2.jpg'%}" style="width: 80px; height: 80px;">
+                  <h5 class="mb-0">Roshan</h5>
+                  <p>Web Developer</p>
+                  <div class="testimonial-text bg-light text-center p-4">
+                  <p class="mb-0">Very good experience.Very simple learning methods and very good faculties.The course helped me valuable experiences and great learning.</p>
+                  </div>
+              </div>
+              <div class="testimonial-item text-center">
+                  <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimonial-3.jpg' %}" style="width: 80px; height: 80px;">
+                  <h5 class="mb-0">Sebin</h5>
+                  <p>Angular Developer</p>
+                  <div class="testimonial-text bg-light text-center p-4">
+                  <p class="mb-0">Joining Edutech was a good decision that I made.While learning a new language, I had so many doubts and my trainers helps to resolve it.It was a wonderful learning experience with Edutech.</p>
+                  </div>
+              </div>
+              <div class="testimonial-item text-center">
+                  <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimonial-4.jpg' %}" style="width: 80px; height: 80px;">
+                  <h5 class="mb-0">Tintu</h5>
+                  <p>Php Developer</p>
+                  <div class="testimonial-text bg-light text-center p-4">
+                  <p class="mb-0">A perfect place to learn programming.I have completed php developer course here.Today I'am really happy that I decided to join here.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Testimonial End -->
+
+   
+   {% endblock %}
+</body>
+</html>
+  

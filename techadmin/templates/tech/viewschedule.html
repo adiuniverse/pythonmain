@@ -1,0 +1,50 @@
+{% extends 'tech/master.html' %}
+{% load static %}
+{% block title %}ViewSchedule{% endblock %}
+{% block link %}
+{% endblock %}   
+</head>
+<body>
+  {% block content %}
+
+   
+  <table class="table">
+        
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Batch Name</th>
+      <th scope="col">Days</th>
+      <th scope="col">Start Time</th>
+      <th scope="col">End Time</th>
+    
+      <th scope="col"></th>
+    </tr>
+    
+
+
+
+
+   {% for b in batch_list %}
+ 
+    <tr>
+      <tr>
+        <td scope="col">{{b.id}}</td>
+        <td scope="col">{{b.name}}</td>
+        <td scope="col">{{b.day}}</td>
+        <td scope="col">{{b.start}}</td>
+        <td scope="col">{{b.end}}</td>
+        <td scope="col"></td>
+        <td scope="col"></td>
+        
+      </tr>
+    </tr>
+  {% endfor %}
+    
+</table>
+
+
+
+  {% endblock %}
+</body>
+</html>
+  

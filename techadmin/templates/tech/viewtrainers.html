@@ -1,0 +1,47 @@
+{% extends 'tech/master.html' %}
+{% load static %}
+{% block title %}ViewTrainers{% endblock %}
+{% block link %}
+{% endblock %}   
+</head>
+<body>
+  {% block content %}
+
+
+  <table class="table">
+        
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Address</th>
+      <th scope="col">Email</th>
+      <th scope="col">Experience</th>
+    </tr>
+    
+
+
+   {% for t in trainer_list %}
+
+ 
+    <tr>
+      <tr>
+        <td scope="col">{{t.id}}</td>
+        <td scope="col">{{t.name}}</td>
+        <td scope="col">{{t.phone}}</td>
+        <td scope="col">{{t.address}}</td>
+        <td scope="col">{{t.email}}</td>
+        <td scope="col">{{t.experience}}</td>
+        <td scope="col"></td>
+        
+      </tr>
+    </tr>
+
+    {% endfor %}
+</table>
+
+
+  {% endblock %}
+</body>
+</html>
+  

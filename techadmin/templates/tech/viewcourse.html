@@ -1,0 +1,49 @@
+{% extends 'tech/master.html' %}
+{% load static %}
+{% block title %}ViewCourse{% endblock %}
+{% block link %}
+{% endblock %}   
+</head>
+<body>
+  {% block content %}
+
+   
+   
+  <table class="table">
+        
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Course Name</th>
+      <th scope="col">Duration</th>
+      <th scope="col">Payment</th>
+      <th scope="col">Image</th>
+    
+      <th scope="col"></th>
+    </tr>
+    
+
+
+
+
+  
+    {% for c in course_list %}
+    <tr>
+      <tr>
+        <td scope="col">{{c.id}}</td>
+        <td scope="col">{{c.name}}</td>
+        <td scope="col">{{c.duration}}</td>
+        <td scope="col">{{c.price}}</td>
+        <td scope="col"><img src = "{{c.image.url}}"></td>
+        
+        
+      </tr>
+    </tr>
+
+     {% endfor %}
+</table>
+
+
+  {% endblock %}
+</body>
+</html>
+  

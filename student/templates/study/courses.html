@@ -1,0 +1,35 @@
+{% extends 'study/master.html' %}
+{% load static %}
+{% block title %}Courses{% endblock %}
+{% block link %}
+
+{% endblock %}   
+</head>
+<body>
+   {% block content %}
+    
+   <!-- <div class="card" style="width: 18rem;">
+      <img src="{% static  'img/carousel-1.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Python FullStack</h5>
+        <p class="card-text">Duration:6 Months</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div> -->
+
+      {% for c in course_list %}
+    <div class="card" style="width: 18rem;">
+      <img src="{{c.image.url}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{c.name}}</h5>
+        <p class="card-text">{{c.duration}}</p>
+        <p class="card-text">{{c.price}}</p>
+        <p class="card-text">{{c.id}}</p>
+      </div>
+    </div>
+    
+    {% endfor %}
+   {% endblock %}
+</body>
+</html>
+  
